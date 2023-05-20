@@ -40,7 +40,7 @@
 
           <div class="mb-3">
             <label class="form-label">Select Category</label>
-            <select name="categories" class="form-select" multiple aria-label="multiple select example">
+            <select name="categories[]" class="form-select" multiple aria-label="multiple select example">
                 @foreach ($categories as $category)
                     <option value={{ $category->id }} @selected($menu->categories->contains($category))>{{ $category->name }}</option>
                 @endforeach
