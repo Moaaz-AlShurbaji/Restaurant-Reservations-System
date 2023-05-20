@@ -7,7 +7,7 @@
             <div class="col-lg-6 text-center text-lg-start">
                 <h1 class="display-3 text-white animated slideInLeft">Enjoy Our<br>Delicious Meal</h1>
                 <p class="text-white animated slideInLeft mb-4 pb-2">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                <a href="{{ url("reservations/create") }}" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
             </div>
             <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                 <img class="img-fluid" src="img/hero.png" alt="">
@@ -113,6 +113,60 @@
     </div>
 </div>
 <!-- About End -->
+
+<!-- Testimonial Start -->
+<div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="text-center">
+            <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
+            <h1 class="mb-5">Our Clients Say!!!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item bg-transparent border rounded p-4">
+                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-1.jpg" style="width: 50px; height: 50px;">
+                    <div class="ps-3">
+                        <h5 class="mb-1">Christine</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-transparent border rounded p-4">
+                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-2.jpg" style="width: 50px; height: 50px;">
+                    <div class="ps-3">
+                        <h5 class="mb-1">Marcus</h5>
+
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-transparent border rounded p-4">
+                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-3.jpg" style="width: 50px; height: 50px;">
+                    <div class="ps-3">
+                        <h5 class="mb-1">Mike</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-transparent border rounded p-4">
+                <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
+                <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                <div class="d-flex align-items-center">
+                    <img class="img-fluid flex-shrink-0 rounded-circle" src="img/testimonial-4.jpg" style="width: 50px; height: 50px;">
+                    <div class="ps-3">
+                        <h5 class="mb-1">Maya</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Testimonial End -->
 
 
 

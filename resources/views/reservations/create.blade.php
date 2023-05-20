@@ -3,7 +3,7 @@
 @section("content")
 
 @if(session("message"))
-    <div class="alert alert-success">{{ session("message") }}</div>
+    <div class="alert alert-success mt-5">{{ session("message") }}</div>
 @endif
 
 <h1 class="text-center my-5">Make Reservation</h1>
@@ -21,36 +21,54 @@
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="first_name" name="first_name" placeholder="first name">
                                 <label for="first_name">First Name</label>
+                                @error('first_name')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control" id="last_name" name="last_name" placeholder="last name">
                                 <label for="last_name">Last Name</label>
+                                @error('last_name')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="email" class="form-control" name="email" id="email" placeholder="Your Email">
                                 <label for="email">Your Email</label>
+                                @error('email')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control" name="phone" id="phone" placeholder="Phone">
                                 <label for="phone">Phone Number</label>
+                                @error('phone')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="number" class="form-control" name="guest_number" id="guest_number" placeholder="guest_number">
                                 <label for="guest_number">Guest Number</label>
+                                @error('guest_number')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
                             <div class="form-floating date" id="res_date">
                                 <input type="datetime-local" name="res_date" class="form-control datetimepicker-input" id="res_date" placeholder="Date & Time" />
                                 <label for="datetime">Date & Time</label>
+                                @error('res_date')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -62,6 +80,9 @@
                                     @endforeach
                                 </select>
                                 <label for="table_id">Table</label>
+                                @error('table_id')
+                                    <small class="text-danger">{{ $message }}</small>
+                                @enderror
                               </div>
                         </div>
                         
